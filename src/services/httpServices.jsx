@@ -2,7 +2,7 @@ import axios from "axios";
 import logger from "./logger";
 import {toast} from 'react-toastify'
 
-axios.defaults.baseURL = "https://time-management-system-app.herokuapp.com/api"
+axios.defaults.baseURL = "https://time-management-system-app.herokuapp.com/"
 //console.log("axios.defaults.baseURL",process.env,axios.defaults.baseURL)
 axios.interceptors.response.use(null,error=>{
     const expectedError =   error.response && 
