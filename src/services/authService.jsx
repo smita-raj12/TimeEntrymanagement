@@ -6,6 +6,7 @@ http.setJwt(getjwt());
 const apiEndpoint = "/auth";
 
 console.log("auth123 ",apiEndpoint)
+console.log("process.env",process.env)
 
 export async function login(email, password) {
   const { data: jwt } = await http.post(apiEndpoint, { email, password });
