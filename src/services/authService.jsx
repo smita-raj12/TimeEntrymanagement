@@ -5,7 +5,7 @@ http.setJwt(getjwt());
 
 const apiEndpoint = "https://time-management-system-app.herokuapp.com/api/auth";
 
-console.log("auth",apiEndpoint)
+console.log("auth123 ",apiEndpoint)
 
 export async function login(email, password) {
   const { data: jwt } = await http.post(apiEndpoint, { email, password });
