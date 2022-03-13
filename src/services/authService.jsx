@@ -3,7 +3,7 @@ import jwt_decode from "jwt-decode";
 
 http.setJwt(getjwt());
 
-const apiEndpoint = "/auth";
+const apiEndpoint = "https://time-management-system-app.herokuapp.com/api/auth";
 
 console.log("auth",apiEndpoint)
 
